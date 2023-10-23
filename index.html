@@ -33,21 +33,6 @@
               alt="slider img 1"
             />
           </div>
-          <!-- <div class="slider__img">
-            <img
-              class="slider--img"
-              src="./assets/img-2.jpg"
-              alt="slider img 1"
-            />
-          </div>
-          <div class="slider__img">
-            <img
-              id="img-1"
-              class="slider--img"
-              src="./assets/img-3.jpg"
-              alt="slider img 1"
-            />
-          </div> -->
         </div>
         <div class="main--right-sign">&gt;</div>
       </main>
@@ -58,44 +43,6 @@
       </p>
     </footer>
 
-    <script>
-      const imgSrc = "./assets/img-";
-
-      const slider = document.querySelector(".slider__img");
-      console.log(slider);
-      const left = document.querySelector(".main--left-sign");
-      const right = document.querySelector(".main--right-sign");
-      const img = slider.querySelector("img");
-
-      let i = 1;
-      let imgPath = imgSrc + i + ".jpg";
-      console.log(imgSrc);
-
-      left.addEventListener("click", function () {
-        if (i > 1) {
-          i--;
-          console.log(i);
-        } else {
-          i = 10;
-          console.log(i);
-        }
-        imgPath = imgSrc + i + ".jpg";
-        console.log("imgSrc left: ", i, "[", imgPath, "]");
-        img.setAttribute("src", imgPath);
-      });
-
-      right.addEventListener("click", function () {
-        if (i < 10) {
-          i++;
-          console.log(i);
-        } else {
-          i = 1;
-          console.log(i);
-        }
-        imgPath = imgSrc + i + ".jpg";
-        console.log("imgSrc right: ", i, "[", imgPath, "]");
-        img.setAttribute("src", imgPath);
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
